@@ -194,7 +194,7 @@ def create_playlist_and_add_song(file):
             n += 1
             # Trying to get the iTunes ID of the song
             title, artist, album = escape_apostrophes(
-                row[1]), escape_apostrophes(row[3]), escape_apostrophes(row[5])
+                row[2]), escape_apostrophes(row[4]), escape_apostrophes(row[3])
             track_id = get_itunes_id(title, artist, album)
             # If the song is found, add it to the playlist
             if track_id:
